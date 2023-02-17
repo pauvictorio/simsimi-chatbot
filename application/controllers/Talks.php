@@ -28,7 +28,7 @@ class Talks extends CI_Controller
 		$url = 'https://wsapi.simsimi.com/190410/talk';
 		$headers = array(
 			'Content-Type: application/json',
-			'x-api-key: Hq88XNN0N.Tc8itUDAJY.Uo~Lz~gyhB77kdQkDiM'
+			'x-api-key: API-KEY-HERE'
 		);
 		$data = array(
 			'utext' => $utext,
