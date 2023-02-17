@@ -1,0 +1,157 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(255, 243, 140);
+	background-image: url(/assets/simsimi-bg.png) no-repeat;
+	color: rgb(80, 80, 80);
+	font-family: sans-serif;
+	height: 100vh;
+	width: 85%;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+div.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+header {
+	flex: 0 0 auto;
+	background-color: rgb(80, 80, 80);
+	color: rgb(255, 214, 43);
+	padding: 20px;
+}
+
+	header h1 {
+		font-size: 2rem;
+	}
+
+img#logo {
+	height: 450px;
+	width: 450px;
+	position: absolute;
+	top: 250px;
+	z-index: 1;
+	mix-blend-mode: multiply;
+}
+
+section {
+	align-self: end;
+	background-color: rgb(255, 250, 209);
+	height: 100%;
+	width: 70%;
+	border-radius: 5px;
+	padding: 10px 0 20px;
+	margin: 30px 0 10px;
+	overflow-y: auto;
+}
+
+	section .chat {
+		display: flex;
+		flex-direction: column;
+	}
+
+		.chat .user {
+			align-self: end;
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: start;
+		}
+
+		.chat .simsimi {
+			align-self: start;
+			display: flex;
+			flex-direction: row;
+			align-items: start;
+		}
+
+			.chat img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				margin: 10px;
+			}
+
+			.user .user-in {
+				background-color: white;
+				color: rgb(80, 80, 80);
+				max-width: 80%;
+				border-radius: 5px;
+				padding: 15px;
+				margin: 10px;
+			}
+
+			.simsimi .simsimi-in {
+				background-color: rgb(80, 80, 80);
+				color: white;
+				max-width: 80%;
+				border-radius: 5px;
+				padding: 15px;
+				margin: 10px;
+			}
+
+footer {
+	flex: 0 0 auto;
+	margin: 10px 0;
+}
+
+	footer form {
+		display: flex;
+		justify-content: end;
+	}
+
+	input[type="text"] {
+		color: rgb(80, 80, 80);
+		font-size: 1rem;
+		width: 40%;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	input[type="submit"] {
+		background-color: rgb(255, 250, 209);
+		color: rgb(80, 80, 80);
+		font-size: 1rem;
+		font-weight: bold;
+		border: 1px solid rgb(80, 80, 80);
+		border-radius: 5px;
+		padding: 10px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover {
+		background-color: rgb(80, 80, 80);
+		color: rgb(255, 250, 209);
+	}
+
+/* Chatbox Custom Scrollbar */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(142, 142, 142); 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(103, 103, 103); 
+}
